@@ -2,7 +2,11 @@
 [beego官方文档](https://beego.me/docs/intro/)
 
 ## go
-[go官方文档](https://golang.org/doc/)
+[go英文官方文档](https://golang.org/doc/)
+
+[go中文文档](http://docscn.studygolang.com/doc/)
+
+[Golang标准库文档](https://studygolang.com/pkgdoc)
 
 ## 打包
 ```
