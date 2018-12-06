@@ -2,5 +2,9 @@
 [官方文档](https://beego.me/docs/intro/)
 
 ## 打包
-go打包只能打包所有的*.go 文件，静态文件需要自己去上传
+```
+uname -r
+env GOOS=linux GOARCH=386 go build main.go
+```
+根据系统类型然后进行打包
 
