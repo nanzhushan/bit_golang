@@ -1,7 +1,7 @@
 ## beego
 [beego官方文档](https://beego.me/docs/intro/)
 
-## go
+## go 和java都是强类型语言，他们都很像
 [go英文官方文档](https://golang.org/doc/)
 
 [go中文文档](http://docscn.studygolang.com/doc/)
