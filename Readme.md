@@ -1,5 +1,8 @@
-## golang 是编译型语言和java类似
-[官方文档](https://beego.me/docs/intro/)
+## beego
+[beego官方文档](https://beego.me/docs/intro/)
+
+## go
+[go官方文档](https://golang.org/doc/)
 
 ## 打包
 ```
