@@ -8,6 +8,8 @@
 
 [Golang标准库文档](https://studygolang.com/pkgdoc)
 
+[入门指南](https://www.kancloud.cn/kancloud/the-way-to-go/72457)
+
 ## 打包
 ```
 uname -r
