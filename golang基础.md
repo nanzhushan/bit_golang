@@ -38,7 +38,7 @@ team[1]="fdsaf"
 print(team[0])
 ```
 ### 结构体
-结构体就是一个字段的集合
+定义结构体 ，数据类型可以不同，但是数组必须数据类型相同
 ```
 type aa struct {
 	x int
@@ -181,4 +181,62 @@ func main()  {
 	Greting("uu","77")
 	print("总耗时",time_all.Seconds())
 }
+```
+
+## 转换成json
+```
+package main
+
+import (
+	"encoding/json"
+	"fmt"
+)
+
+//定义address结构体
+type Address struct {
+	city string
+	age string
+}
+
+// 定义结构体 ，数据类型可以不同，但是数组必须数据类型相同
+type VCard  struct {
+	FirstName string
+	LastName  string
+	Remark    string
+	Address  []*Address
+}
+
+func main()  {
+	//s1:=new(Address)   // 指针初始化 定义指向结构体的指针,可以通过s1.age="" 进行赋值
+	s2 := &Address{"cs","18"}  //  传统方法初始化
+	s3 := &Address{"sh","19"}  //  传统方法初始化
+
+	vc := VCard{"Jan", "Kersschot",  "haha",[]*Address{s2,s3}}
+	js, _ := json.Marshal(vc)    // 转json
+	fmt.Printf("JSON format: %s", js)
+}
+```
+map 转json
+```
+package main
+import (
+	"encoding/json"
+	"fmt"
+)
+
+// map转json
+func main()  {
+	s := []map[string]interface{}{}
+	m1 := map[string]interface{}{"name": "John", "age": 10}
+	m2 := map[string]interface{}{"name": "tom", "age": 19}
+	s = append(s, m1,m2)   // 定义指针指向map
+	fmt.Print(m2)
+	// 转json
+	b,err := json.Marshal(s)
+	if err != nil{              // 必须要判断是不是能正常转换，不然程序无法编译
+		print("fail",err)
+	}
+	fmt.Print(string(b))
+}
+
 ```
