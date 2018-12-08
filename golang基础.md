@@ -163,7 +163,7 @@ func main()  {
 }
 func Greting(x ...string) string{   // 传入可变参数
 	print(x[0],x[1],len(x))    // len 返回长度
-	defer lai()     // defer 用于return之后再执行一些语句类似java中的finally,必须写在retrun之前
+	defer lai()     // defer 用于return之后再执行一些语句类似java异常处理中的finally,必须写在retrun之前
 	return "haha"
 
 }
@@ -238,5 +238,11 @@ func main()  {
 	}
 	fmt.Print(string(b))
 }
-
 ```
+## 异常处理
+```
+b,err := json.Marshal(s)
+if err != nil{              // 类似java和py中的try...expect..., 其中 defer关键字就是异常处理中的finally
+	print("fail",err)
+}
+``` 
