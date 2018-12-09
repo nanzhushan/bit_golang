@@ -12,6 +12,10 @@
 
 [正则表达式](https://www.cnblogs.com/benlightning/articles/4440940.html)
 
+##对比java/python/php  确实go还有很多不足的地方
+* 导入自定义的要放到gopath目录
+* .....
+
 ### go使用场景
 * 高并发处理，类似于c,支持协程，为并发而生
 * 高性能的http服务器
@@ -23,3 +27,18 @@
 * 全局锁是解释性语言的通病，所以解释性语言执行效率比编译型语言效率低
 
 解释性语言有perl,python,php ,编译型语言有 java,golang
+
+## go 引入自定义的包
+*  第一种情况,同级目录,不同文件中的变量和函数都可以直接访问,直接import "./messages" 即可.
+* 第二种情况，不同目录
+```
+(1)要想引入自定义的包，需要自定义包的路径为GOPATH路径中。
+(2)golang和C或php不一样，不会自动查找当前路径下的文件，必须先在$GOAPTH里添加自己工程的路径
+(3)自定义包里面对外提供的API函数，首字母必须大写
+(4)通常情况下，import的包都是相对$GOPATH/src目录引入的，比如从github上面clone下来的项目，直接放到$GOPATH/src目录下，就可以直接import,例如：
+如果项目的import路径是这样写的：
+import "github.com/yourname/projectname"
+需要将项目代码放置在：
+$GOAPTH/src/github.com/yourname/projectname/下
+```
+
