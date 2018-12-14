@@ -1,3 +1,6 @@
+### 看了go语言，和面向对象的语言编程思想相差很大
+还是以py,php,java 为主 不要去过多研究go了，浪费时间，多用用py
+
 ## beego
 [beego官方文档](https://beego.me/docs/intro/)
 
@@ -11,6 +14,8 @@
 [入门指南](https://www.kancloud.cn/kancloud/the-way-to-go/72457)
 
 [正则表达式](https://www.cnblogs.com/benlightning/articles/4440940.html)
+
+[go入门文档git_book](https://go.fdos.me)
 
 ##对比java/python/php  确实go还有很多不足的地方
 * 导入自定义的要放到gopath目录
