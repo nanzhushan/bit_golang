@@ -1,5 +1,4 @@
-### 看了go语言，和面向对象的语言编程思想相差很大
-还是以py,php,java 为主 不要去过多研究go了，浪费时间，多用用py
+### 看了go语言，和面向对象的语言编程思想相差很大，写起来很不顺手多撸python/php/java吧
 
 ## beego
 [beego官方文档](https://beego.me/docs/intro/)
