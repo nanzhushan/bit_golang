@@ -1,4 +1,4 @@
-### 看了go语言，和面向对象的语言编程思想相差很大，写起来很不顺手多撸python/php/java吧
+### 看了go语言，和面向对象的语言编程思想相差很大，写起来很不顺手,但是撸python/php/java 很顺手，还是多撸撸python/php/java吧
 
 ## beego
 [beego官方文档](https://beego.me/docs/intro/)
