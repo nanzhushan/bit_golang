@@ -1,4 +1,3 @@
-### 看了go语言，python和go在devops中应用还是很大，比如go的项目有k8s,docker,grafana等，python的开源软件有salt，ansible，openstack等
 
 ## beego
 [beego官方文档](https://beego.me/docs/intro/)
