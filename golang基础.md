@@ -22,11 +22,25 @@ env GOOS=linux GOARCH=386 go build main.go
 ## 变量
 
 ```
-var aa int32 = 10
+var aa int32 = 10   // 第一种方式定义
+var aa = "hello"   // 第二种方式定义，根据值自定判断类型
 fmt.Print("type:",reflect.TypeOf(aa))   // 判断类型, java 中是instanceof
 
 var aa int32 = 10
 _=aa                    // 定义变量而不使用，需要定义 空标识符
+
+name:="haha"  // 第三种方式，这种智能在函数体内使用，不能定义为全局变量
+
+var (                   // 多变量定义
+    name1 type1
+    name2 type2
+)
+```
+
+## 常量
+```
+显式类型定义： const b string = "abc"
+隐式类型定义： const b = "abc"
 ```
 
 ## 数组
@@ -99,7 +113,7 @@ func main()  {
 
 }
 ```
-## map键值对
+## map键值对(和java的hash map以及map类似)
 定义: map[KeyType]ValueType
 ```
 m := make(map[string]string)   // 定义键和值的类型
