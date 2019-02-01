@@ -1,44 +1,44 @@
 
-## ´ò°ü
+## æ‰“åŒ…
 ```
 uname -r
 env GOOS=linux GOARCH=386 go build main.go
 ```
-¸ù¾ÝÏµÍ³ÀàÐÍÈ»ºó½øÐÐ´ò°ü
+æ ¹æ®ç³»ç»Ÿç±»åž‹ç„¶åŽè¿›è¡Œæ‰“åŒ…
 
-##»ù´¡Óï·¨
+##åŸºç¡€è¯­æ³•
 ### 
-* go ÊÇÇ¿ÀàÐÍÓïÑÔ(±ÈÈçdockerÒ»Ñù£¬×ÊÔ´Ê¹ÓÃÄÜÏÞÖÆÄÇÃ´ËÀ)
+* go æ˜¯å¼ºç±»åž‹è¯­è¨€(æ¯”å¦‚dockerä¸€æ ·ï¼Œèµ„æºä½¿ç”¨èƒ½é™åˆ¶é‚£ä¹ˆæ­»)
 
-### º¯Êý
-* GoÓïÑÔ×îÉÙÓÐ¸ö main() º¯Êý
-* º¯ÊýÄÚ¶¨ÒåµÄ±äÁ¿³ÆÎª¾Ö²¿±äÁ¿
-* º¯ÊýÍâ¶¨ÒåµÄ±äÁ¿³ÆÎªÈ«¾Ö±äÁ¿
-* º¯Êý¶¨ÒåÖÐµÄ±äÁ¿³ÆÎªÐÎÊ½²ÎÊý
+### å‡½æ•°
+* Goè¯­è¨€æœ€å°‘æœ‰ä¸ª main() å‡½æ•°
+* å‡½æ•°å†…å®šä¹‰çš„å˜é‡ç§°ä¸ºå±€éƒ¨å˜é‡
+* å‡½æ•°å¤–å®šä¹‰çš„å˜é‡ç§°ä¸ºå…¨å±€å˜é‡
+* å‡½æ•°å®šä¹‰ä¸­çš„å˜é‡ç§°ä¸ºå½¢å¼å‚æ•°
 
-1)`:=` ½á¹¹Ìæ´úvar½øÐÐ±äÁ¿¸³Öµ²»ÄÜÊ¹ÓÃÔÚº¯ÊýÍâ¡£ 
+1)`:=` ç»“æž„æ›¿ä»£varè¿›è¡Œå˜é‡èµ‹å€¼ä¸èƒ½ä½¿ç”¨åœ¨å‡½æ•°å¤–ã€‚ 
 
 
-## ±äÁ¿
+## å˜é‡
 
 ```
 var aa int32 = 10
-fmt.Print("type:",reflect.TypeOf(aa))   // ÅÐ¶ÏÀàÐÍ, java ÖÐÊÇinstanceof
+fmt.Print("type:",reflect.TypeOf(aa))   // åˆ¤æ–­ç±»åž‹, java ä¸­æ˜¯instanceof
 
 var aa int32 = 10
-_=aa                    // ¶¨Òå±äÁ¿¶ø²»Ê¹ÓÃ£¬ÐèÒª¶¨Òå ¿Õ±êÊ¶·û
+_=aa                    // å®šä¹‰å˜é‡è€Œä¸ä½¿ç”¨ï¼Œéœ€è¦å®šä¹‰ ç©ºæ ‡è¯†ç¬¦
 ```
 
-## Êý×é
+## æ•°ç»„
 ```
-// Ò»Î¬Êý×é
+// ä¸€ç»´æ•°ç»„
 var team [3]string
 team[0] = "hammer"
 team[1]="fdsaf"
 print(team[0])
 ```
-### ½á¹¹Ìå
-¶¨Òå½á¹¹Ìå £¬Êý¾ÝÀàÐÍ¿ÉÒÔ²»Í¬£¬µ«ÊÇÊý×é±ØÐëÊý¾ÝÀàÐÍÏàÍ¬
+### ç»“æž„ä½“
+å®šä¹‰ç»“æž„ä½“ ï¼Œæ•°æ®ç±»åž‹å¯ä»¥ä¸åŒï¼Œä½†æ˜¯æ•°ç»„å¿…é¡»æ•°æ®ç±»åž‹ç›¸åŒ
 ```
 type aa struct {
 	x int
@@ -48,73 +48,73 @@ type aa struct {
 func main()  {
 	v := aa{1,4}
 	v.x = 4    
-	println(v.x)  // Í¨¹ýµãºÅ·ÃÎÊ
+	println(v.x)  // é€šè¿‡ç‚¹å·è®¿é—®
 	
 }
 ```
-## Ö¸Õë
+## æŒ‡é’ˆ
 ```
- Go ¾ßÓÐÖ¸Õë¡£ Ö¸Õë±£´æÁË±äÁ¿µÄÄÚ´æµØÖ·¡£
-ÀàÐÍ *T ÊÇÖ¸ÏòÀàÐÍ T µÄÖµµÄÖ¸Õë¡£ÆäÁãÖµÊÇ `nil`¡£
+ Go å…·æœ‰æŒ‡é’ˆã€‚ æŒ‡é’ˆä¿å­˜äº†å˜é‡çš„å†…å­˜åœ°å€ã€‚
+ç±»åž‹ *T æ˜¯æŒ‡å‘ç±»åž‹ T çš„å€¼çš„æŒ‡é’ˆã€‚å…¶é›¶å€¼æ˜¯ `nil`ã€‚
 
 var p *int
 
-& ·ûºÅ»áÉú³ÉÒ»¸öÖ¸ÏòÆä×÷ÓÃ¶ÔÏóµÄÖ¸Õë¡£
+& ç¬¦å·ä¼šç”Ÿæˆä¸€ä¸ªæŒ‡å‘å…¶ä½œç”¨å¯¹è±¡çš„æŒ‡é’ˆã€‚
 
 i := 42
 p = &i
 
-* ·ûºÅ±íÊ¾Ö¸ÕëÖ¸ÏòµÄµ×²ãµÄÖµ¡£
-fmt.Println(*p) // Í¨¹ýÖ¸Õë p ¶ÁÈ¡ i
-*p = 21         // Í¨¹ýÖ¸Õë p ÉèÖÃ i
+* ç¬¦å·è¡¨ç¤ºæŒ‡é’ˆæŒ‡å‘çš„åº•å±‚çš„å€¼ã€‚
+fmt.Println(*p) // é€šè¿‡æŒ‡é’ˆ p è¯»å– i
+*p = 21         // é€šè¿‡æŒ‡é’ˆ p è®¾ç½® i
 
-ÕâÒ²¾ÍÊÇÍ¨³£ËùËµµÄ¡°¼ä½ÓÒýÓÃ¡±»ò¡°·ÇÖ±½ÓÒýÓÃ¡±¡£
+è¿™ä¹Ÿå°±æ˜¯é€šå¸¸æ‰€è¯´çš„â€œé—´æŽ¥å¼•ç”¨â€æˆ–â€œéžç›´æŽ¥å¼•ç”¨â€ã€‚
 ```
-## Êý×éºÍslice
+## æ•°ç»„å’Œslice
 ```
 package main
 import "fmt"
 func main()  {
-	var a[2] string   // ÏñjavaÒ»ÑùÒª¶¨ÒåÊý×é³¤¶È
+	var a[2] string   // åƒjavaä¸€æ ·è¦å®šä¹‰æ•°ç»„é•¿åº¦
 	a[0]="hello"
 	a[1]="dd"
 	fmt.Print(a)
 
-	// slice ÊÇ¸öÓÐÐòµÄÖµ,¿ÉÒÔ²»¶¨Òå³¤¶È.append ¿ÉÒÔÌí¼ÓÔªËØ£¬ÀàËÆpyµÄlist
+	// slice æ˜¯ä¸ªæœ‰åºçš„å€¼,å¯ä»¥ä¸å®šä¹‰é•¿åº¦.append å¯ä»¥æ·»åŠ å…ƒç´ ï¼Œç±»ä¼¼pyçš„list
 	p:=[]int{2,3,5,7}
 	fmt.Print(p)
 	fmt.Print(len(p))
 }
 ```
-¶¨ÒåÊý×éµÄÈýÖÖ·½Ê½
+å®šä¹‰æ•°ç»„çš„ä¸‰ç§æ–¹å¼
 ```
 func main()  {
-	// ¶¨ÒåÓÐÐòÊý×é
-	var aa = [2]string{"fdaf","fdaf"}   // Êý×é³õÊ¼»¯,¶¨ÒåºÃ³¤¶È
-	var bb =[...]string{"cc","rr"}    // ¶¨ÒåÎª¿É±ä³¤¶È
-	var cc = [3]string{0:"tom",1:"18"}    //  µÚÈýÖÖ·½Ê½¶¨Òå
+	// å®šä¹‰æœ‰åºæ•°ç»„
+	var aa = [2]string{"fdaf","fdaf"}   // æ•°ç»„åˆå§‹åŒ–,å®šä¹‰å¥½é•¿åº¦
+	var bb =[...]string{"cc","rr"}    // å®šä¹‰ä¸ºå¯å˜é•¿åº¦
+	var cc = [3]string{0:"tom",1:"18"}    //  ç¬¬ä¸‰ç§æ–¹å¼å®šä¹‰
 	print(aa[0])
 	print(len(bb))
 	print("----",cc[0])
 
 }
 ```
-## map¼üÖµ¶Ô
-¶¨Òå: map[KeyType]ValueType
+## mapé”®å€¼å¯¹
+å®šä¹‰: map[KeyType]ValueType
 ```
-m := make(map[string]string)   // ¶¨Òå¼üºÍÖµµÄÀàÐÍ
+m := make(map[string]string)   // å®šä¹‰é”®å’Œå€¼çš„ç±»åž‹
 m["name"] =  "knight"
 fmt.Print(m["name"])
 ```
 
 
-## ±àÒë°²×°
-* go install ÊÇ½¨Á¢ÔÚ GOPATH ÉÏµÄ£¬ÎÞ·¨ÔÚ¶ÀÁ¢µÄÄ¿Â¼ÀïÊ¹ÓÃ go install¡£
-* GOPATH ÏÂµÄ bin Ä¿Â¼·ÅÖÃµÄÊÇÊ¹ÓÃ go install Éú³ÉµÄ¿ÉÖ´ÐÐÎÄ¼þ£¬¿ÉÖ´ÐÐÎÄ¼þµÄÃû³ÆÀ´×ÔÓÚ±àÒëÊ±µÄ°üÃû¡£
-* go install Êä³öÄ¿Â¼Ê¼ÖÕÎª GOPATH ÏÂµÄ bin Ä¿Â¼£¬ÎÞ·¨Ê¹ÓÃ-o¸½¼Ó²ÎÊý½øÐÐ×Ô¶¨Òå¡£
-* GOPATH ÏÂµÄ pkg Ä¿Â¼·ÅÖÃµÄÊÇ±àÒëÆÚ¼äµÄÖÐ¼äÎÄ¼þ¡£
+## ç¼–è¯‘å®‰è£…
+* go install æ˜¯å»ºç«‹åœ¨ GOPATH ä¸Šçš„ï¼Œæ— æ³•åœ¨ç‹¬ç«‹çš„ç›®å½•é‡Œä½¿ç”¨ go installã€‚
+* GOPATH ä¸‹çš„ bin ç›®å½•æ”¾ç½®çš„æ˜¯ä½¿ç”¨ go install ç”Ÿæˆçš„å¯æ‰§è¡Œæ–‡ä»¶ï¼Œå¯æ‰§è¡Œæ–‡ä»¶çš„åç§°æ¥è‡ªäºŽç¼–è¯‘æ—¶çš„åŒ…åã€‚
+* go install è¾“å‡ºç›®å½•å§‹ç»ˆä¸º GOPATH ä¸‹çš„ bin ç›®å½•ï¼Œæ— æ³•ä½¿ç”¨-oé™„åŠ å‚æ•°è¿›è¡Œè‡ªå®šä¹‰ã€‚
+* GOPATH ä¸‹çš„ pkg ç›®å½•æ”¾ç½®çš„æ˜¯ç¼–è¯‘æœŸé—´çš„ä¸­é—´æ–‡ä»¶ã€‚
 
-## Ñ­»·Óï¾ä
+## å¾ªçŽ¯è¯­å¥
 ```
 func main() {
     for i := 0; i < 5; i++ {
@@ -122,68 +122,68 @@ func main() {
     }
 }
 ```
-## º¯Êý
-1) ´«²Î(Èç¹û¶¨ÒåÁË·µ»ØÀàÐÍÐèÒªÊ¹ÓÃreturn£¬Èç¹ûÃ»ÓÐ¶¨Òå·µ»ØÀàÐÍ¾Í²»ÐèÒª)
+## å‡½æ•°
+1) ä¼ å‚(å¦‚æžœå®šä¹‰äº†è¿”å›žç±»åž‹éœ€è¦ä½¿ç”¨returnï¼Œå¦‚æžœæ²¡æœ‰å®šä¹‰è¿”å›žç±»åž‹å°±ä¸éœ€è¦)
 ```
 func main()  {
 	Greting("uu","77")
 }
 
-func Greting(x string,y string) string{   // ¶¨Òå´«ÈëµÄ²ÎÊýÀàÐÍÒÔ¼°·µ»ØÀàÐÍ
-	print("Çì×£ ",x,y)
+func Greting(x string,y string) string{   // å®šä¹‰ä¼ å…¥çš„å‚æ•°ç±»åž‹ä»¥åŠè¿”å›žç±»åž‹
+	print("åº†ç¥ ",x,y)
 	return x+y
 }
 ```
-»òÕß
+æˆ–è€…
 ```
 func main()  {
 	Greting("uu","77")
 }
 
-func Greting(x string,y string){   // ¶¨Òå´«ÈëµÄ²ÎÊýÀàÐÍÒÔ¼°·µ»ØÀàÐÍ
-	print("Çì×£ ",x,y)
+func Greting(x string,y string){   // å®šä¹‰ä¼ å…¥çš„å‚æ•°ç±»åž‹ä»¥åŠè¿”å›žç±»åž‹
+	print("åº†ç¥ ",x,y)
 }
 ```
-2)´«Èë¿É±ä²ÎÊý
+2)ä¼ å…¥å¯å˜å‚æ•°
 ```
 func main()  {
 	Greting("uu","77")
 }
-func Greting(x ...string) string{   // ´«Èë¿É±ä²ÎÊý
-	print(x[0],x[1])         // Ä¬ÈÏÊÇÊý×é½øÐÐ´«µÝ
+func Greting(x ...string) string{   // ä¼ å…¥å¯å˜å‚æ•°
+	print(x[0],x[1])         // é»˜è®¤æ˜¯æ•°ç»„è¿›è¡Œä¼ é€’
 	//print(x)
 	return "haha"
 }
 ```
-3)defer(ÍÆ³Ù)¹Ø¼ü×Ö
+3)defer(æŽ¨è¿Ÿ)å…³é”®å­—
 ```
 
 func main()  {
 	Greting("uu","77")
 }
-func Greting(x ...string) string{   // ´«Èë¿É±ä²ÎÊý
-	print(x[0],x[1],len(x))    // len ·µ»Ø³¤¶È
-	defer lai()     // defer ÓÃÓÚreturnÖ®ºóÔÙÖ´ÐÐÒ»Ð©Óï¾äÀàËÆjavaÒì³£´¦ÀíÖÐµÄfinally,±ØÐëÐ´ÔÚretrunÖ®Ç°
+func Greting(x ...string) string{   // ä¼ å…¥å¯å˜å‚æ•°
+	print(x[0],x[1],len(x))    // len è¿”å›žé•¿åº¦
+	defer lai()     // defer ç”¨äºŽreturnä¹‹åŽå†æ‰§è¡Œä¸€äº›è¯­å¥ç±»ä¼¼javaå¼‚å¸¸å¤„ç†ä¸­çš„finally,å¿…é¡»å†™åœ¨retrunä¹‹å‰
 	return "haha"
 
 }
 func lai()  {
-	print("ÄãÃÇÏÈÀ´....")
+	print("ä½ ä»¬å…ˆæ¥....")
 }
 ```
-## ¼ÆËãÊ±¼ä
+## è®¡ç®—æ—¶é—´
 ```
 func main()  {
 	start := time.Now()
-	time.Sleep(3 * time.Second)   // sleep  3Ãë
+	time.Sleep(3 * time.Second)   // sleep  3ç§’
 	end:= time.Now()
 	time_all:=end.Sub(start)
 	Greting("uu","77")
-	print("×ÜºÄÊ±",time_all.Seconds())
+	print("æ€»è€—æ—¶",time_all.Seconds())
 }
 ```
 
-## ×ª»»³Éjson
+## è½¬æ¢æˆjson
 ```
 package main
 
@@ -192,13 +192,13 @@ import (
 	"fmt"
 )
 
-//¶¨Òåaddress½á¹¹Ìå
+//å®šä¹‰addressç»“æž„ä½“
 type Address struct {
 	city string
 	age string
 }
 
-// ¶¨Òå½á¹¹Ìå £¬Êý¾ÝÀàÐÍ¿ÉÒÔ²»Í¬£¬µ«ÊÇÊý×é±ØÐëÊý¾ÝÀàÐÍÏàÍ¬
+// å®šä¹‰ç»“æž„ä½“ ï¼Œæ•°æ®ç±»åž‹å¯ä»¥ä¸åŒï¼Œä½†æ˜¯æ•°ç»„å¿…é¡»æ•°æ®ç±»åž‹ç›¸åŒ
 type VCard  struct {
 	FirstName string
 	LastName  string
@@ -207,16 +207,16 @@ type VCard  struct {
 }
 
 func main()  {
-	//s1:=new(Address)   // Ö¸Õë³õÊ¼»¯ ¶¨ÒåÖ¸Ïò½á¹¹ÌåµÄÖ¸Õë,¿ÉÒÔÍ¨¹ýs1.age="" ½øÐÐ¸³Öµ
-	s2 := &Address{"cs","18"}  //  ´«Í³·½·¨³õÊ¼»¯
-	s3 := &Address{"sh","19"}  //  ´«Í³·½·¨³õÊ¼»¯
+	//s1:=new(Address)   // æŒ‡é’ˆåˆå§‹åŒ– å®šä¹‰æŒ‡å‘ç»“æž„ä½“çš„æŒ‡é’ˆ,å¯ä»¥é€šè¿‡s1.age="" è¿›è¡Œèµ‹å€¼
+	s2 := &Address{"cs","18"}  //  ä¼ ç»Ÿæ–¹æ³•åˆå§‹åŒ–
+	s3 := &Address{"sh","19"}  //  ä¼ ç»Ÿæ–¹æ³•åˆå§‹åŒ–
 
 	vc := VCard{"Jan", "Kersschot",  "haha",[]*Address{s2,s3}}
-	js, _ := json.Marshal(vc)    // ×ªjson
+	js, _ := json.Marshal(vc)    // è½¬json
 	fmt.Printf("JSON format: %s", js)
 }
 ```
-map ×ªjson
+map è½¬json
 ```
 package main
 import (
@@ -224,25 +224,25 @@ import (
 	"fmt"
 )
 
-// map×ªjson
+// mapè½¬json
 func main()  {
 	s := []map[string]interface{}{}
 	m1 := map[string]interface{}{"name": "John", "age": 10}
 	m2 := map[string]interface{}{"name": "tom", "age": 19}
-	s = append(s, m1,m2)   // ¶¨ÒåÖ¸ÕëÖ¸Ïòmap
+	s = append(s, m1,m2)   // å®šä¹‰æŒ‡é’ˆæŒ‡å‘map
 	fmt.Print(m2)
-	// ×ªjson
+	// è½¬json
 	b,err := json.Marshal(s)
-	if err != nil{              // ±ØÐëÒªÅÐ¶ÏÊÇ²»ÊÇÄÜÕý³£×ª»»£¬²»È»³ÌÐòÎÞ·¨±àÒë
+	if err != nil{              // å¿…é¡»è¦åˆ¤æ–­æ˜¯ä¸æ˜¯èƒ½æ­£å¸¸è½¬æ¢ï¼Œä¸ç„¶ç¨‹åºæ— æ³•ç¼–è¯‘
 		print("fail",err)
 	}
 	fmt.Print(string(b))
 }
 ```
-## Òì³£´¦Àí
+## å¼‚å¸¸å¤„ç†
 ```
 b,err := json.Marshal(s)
-if err != nil{              // ÀàËÆjavaºÍpyÖÐµÄtry...expect..., ÆäÖÐ defer¹Ø¼ü×Ö¾ÍÊÇÒì³£´¦ÀíÖÐµÄfinally
+if err != nil{              // ç±»ä¼¼javaå’Œpyä¸­çš„try...expect..., å…¶ä¸­ deferå…³é”®å­—å°±æ˜¯å¼‚å¸¸å¤„ç†ä¸­çš„finally
 	print("fail",err)
 }
 ``` 
