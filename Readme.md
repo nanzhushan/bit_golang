@@ -17,6 +17,8 @@
 
 [go语言入门简易教程](http://go.zerostech.com)
 
+[go教程](http://c.biancheng.net/golang/)
+
 ##对比java/python/php  确实go还有很多不足的地方
 * 导入自定义的要放到gopath目录
 * .....
