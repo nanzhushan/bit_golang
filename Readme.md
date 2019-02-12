@@ -47,3 +47,5 @@ import "github.com/yourname/projectname"
 $GOAPTH/src/github.com/yourname/projectname/下
 ```
 
+## golang是面向什么的语言
+golang是面向接口的语言，和传统面向对象的语言不同，面向对象的 封装多态继承在golang中都是通过接口去实现的
