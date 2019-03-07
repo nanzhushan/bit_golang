@@ -50,3 +50,7 @@ $GOAPTH/src/github.com/yourname/projectname/下
 
 ## golang是面向什么的语言
 golang是面向接口的语言，和传统面向对象的语言不同，面向对象的 封装多态继承在golang中都是通过接口去实现的
+
+#### RPC调用和http调用区别在哪里？
+RPC主要是基于TCP/IP协议,工作在传输层
+而HTTP服务主要是基于HTTP协议,工作在应用层
