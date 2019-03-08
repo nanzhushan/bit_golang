@@ -2,7 +2,7 @@
 ## beego
 [beego官方文档](https://beego.me/docs/intro/)
 
-#### golang入门文档如下
+#### golang入门文档如下:
 [go英文官方文档](https://golang.org/doc/)
 
 [go中文文档](http://docscn.studygolang.com/doc/)
