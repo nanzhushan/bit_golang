@@ -1,4 +1,3 @@
-
 ## beego
 [beego官方文档](https://beego.me/docs/intro/)
 
@@ -54,3 +53,5 @@ golang是面向接口的语言，和传统面向对象的语言不同，面向�
 #### RPC调用和http调用区别在哪里？
 RPC主要是基于TCP/IP协议,工作在传输层
 而HTTP服务主要是基于HTTP协议,工作在应用层
+
+到目前为止(20190308) 还是python,php,java比golang顺手也许是因为他们是面向对象的语言吧
