@@ -3,7 +3,7 @@
 [beego官方文档](https://beego.me/docs/intro/)
 
 #### golang入门文档如下:
----
+-----
 [go英文官方文档](https://golang.org/doc/)
 
 [go中文文档](http://docscn.studygolang.com/doc/)
@@ -17,7 +17,8 @@
 [go教程](http://c.biancheng.net/golang/)
 
 [go语言圣经](https://books.studygolang.com/gopl-zh/)
-----
+
+-----
 
 ##对比java/python/php  确实go还有很多不足的地方
 * 导入自定义的要放到gopath目录
