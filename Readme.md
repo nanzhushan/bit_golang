@@ -2,7 +2,7 @@
 ## beego
 [beego官方文档](https://beego.me/docs/intro/)
 
-## go 和java都是强类型语言，他们都很像
+#### golang入门文档如下
 [go英文官方文档](https://golang.org/doc/)
 
 [go中文文档](http://docscn.studygolang.com/doc/)
@@ -11,15 +11,13 @@
 
 [入门指南](https://www.kancloud.cn/kancloud/the-way-to-go/72457)
 
-[正则表达式](https://www.cnblogs.com/benlightning/articles/4440940.html)
-
-[go入门文档git_book](https://go.fdos.me)
-
 [go语言入门简易教程](http://go.zerostech.com)
 
 [go教程](http://c.biancheng.net/golang/)
 
 [go语言圣经](https://books.studygolang.com/gopl-zh/)
+
+
 ##对比java/python/php  确实go还有很多不足的地方
 * 导入自定义的要放到gopath目录
 * .....
