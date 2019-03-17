@@ -46,6 +46,13 @@ import "github.com/yourname/projectname"
 需要将项目代码放置在：
 $GOAPTH/src/github.com/yourname/projectname/下
 ```
+如何设置gopath变量了？
+```
+set GOPATH=D:\Go_res\v1     // windows设置方法
+export PATH=$PATH:/usr/local/php/bin    //linux 设置方法   
+
+```
+
 
 ## golang是面向什么的语言
 golang是面向接口的语言，和传统面向对象的语言不同，面向对象的 封装多态继承在golang中都是通过接口去实现的
