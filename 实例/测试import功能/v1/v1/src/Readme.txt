@@ -1,0 +1,1 @@
+set GOPATH=D:\Go_res\v1 
