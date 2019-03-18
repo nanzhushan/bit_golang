@@ -27,7 +27,7 @@ func hello(w http.ResponseWriter, r *http.Request) {
 }
 func main() {
 	http.HandleFunc("/", hello)
-	http.ListenAndServe("0.0.0.0:8000", nil)
+	err := http.ListenAndServe("0.0.0.0:8000", nil)
     if err != nil {
             fmt.Println(err)
         }
