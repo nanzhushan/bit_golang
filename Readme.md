@@ -1,5 +1,3 @@
-## beego
-[beego官方文档](https://beego.me/docs/intro/)
 
 #### golang入门文档如下:
 -----
@@ -9,11 +7,11 @@
 
 [Golang标准库文档](https://studygolang.com/pkgdoc)
 
-[入门指南](https://www.kancloud.cn/kancloud/the-way-to-go/72457)
+[go入门指南](https://www.kancloud.cn/kancloud/the-way-to-go/72457)
 
 [go语言入门简易教程](http://go.zerostech.com)
 
-[go教程](http://c.biancheng.net/golang/)
+[go语言教程](http://c.biancheng.net/golang/)
 
 [go语言圣经](https://books.studygolang.com/gopl-zh/)
 
