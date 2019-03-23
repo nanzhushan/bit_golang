@@ -1,17 +1,7 @@
 
 #### golang入门文档如下:
 -----
-[go英文官方文档](https://golang.org/doc/)
-
-[go中文文档](http://docscn.studygolang.com/doc/)
-
-[Golang标准库文档](https://studygolang.com/pkgdoc)
-
-[go入门指南](https://www.kancloud.cn/kancloud/the-way-to-go/72457)
-
-[go语言入门简易教程](http://go.zerostech.com)
-
-[go语言教程](http://c.biancheng.net/golang/)
+[the-way-to-go_ZH_CN](https://github.com/nanzhushan/the-way-to-go_ZH_CN/blob/master/eBook/directory.md)
 
 [go语言圣经](https://books.studygolang.com/gopl-zh/)
 
