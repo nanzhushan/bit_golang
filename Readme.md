@@ -5,6 +5,9 @@
 
 [go语言圣经](https://books.studygolang.com/gopl-zh/)
 
+[web框架推荐gin](https://gin-gonic.com/zh-cn/docs/)
+
+从php转过来的一定很喜欢gin
 -----
 
 ##对比java/python/php  确实go还有很多不足的地方
