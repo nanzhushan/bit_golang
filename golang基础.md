@@ -206,7 +206,7 @@ import (
 	"fmt"
 )
 
-//定义address结构体
+// 定义address结构体
 type Address struct {
 	city string
 	age string
@@ -221,12 +221,12 @@ type VCard  struct {
 }
 
 func main()  {
-	//s1:=new(Address)   // 指针初始化 定义指向结构体的指针,可以通过s1.age="" 进行赋值
-	s2 := &Address{"cs","18"}  //  传统方法初始化
-	s3 := &Address{"sh","19"}  //  传统方法初始化
+	//s1:=new(Address)		// 指针初始化 定义指向结构体的指针,可以通过s1.age="" 进行赋值
+	s2 := &Address{"cs","18"}	// 传统方法初始化
+	s3 := &Address{"sh","19"}	//传统方法初始化
 
 	vc := VCard{"Jan", "Kersschot",  "haha",[]*Address{s2,s3}}
-	js, _ := json.Marshal(vc)    // 转json
+	js, _ := json.Marshal(vc)	// 转json
 	fmt.Printf("JSON format: %s", js)
 }
 ```
