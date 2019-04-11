@@ -88,7 +88,7 @@ fmt.Println(*p) // 通过指针 p 读取 i
 	package main
 	import "fmt"
 	func main()  {
-		var a[2] string   // 像java一样要定义数组长度
+		var a[2] string		// 像java一样要定义数组长度
 		a[0]="hello"
 		a[1]="dd"
 		fmt.Print(a)
