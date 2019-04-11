@@ -260,3 +260,7 @@ if err != nil{              // 类似java和py中的try...expect..., 其中 defe
 	print("fail",err)
 }
 ``` 
+### 表示字符串
+* 双引号: 可以表示字符串
+* 反引号: 表示原生字符串，比如引号括号等
+
