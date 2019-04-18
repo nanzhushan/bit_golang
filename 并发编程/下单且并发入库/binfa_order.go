@@ -29,7 +29,7 @@ func order(odrId string) {      // 逻辑处理进行下单操作
 func insert(odrChan chan string) {    // 处理逻辑入库
 	for {
 		select {
-		case odrId := <-odrChan:    // 从通道读取数据
+		case odrId := <-odrChan:    // 从通道读取数据，select 是 channel写入和读取消息的专用语句
 			fmt.Println("入库",odrId )
 		}
 	}

@@ -9,7 +9,7 @@ func main()  {
 	ch:=make(chan  int)  // 创建一个无长度/无缓冲的channel，也就是同步的
 	ch<- 1 //ordeer_id
 	go func() {
-		<-ch
+		<-ch                        // 左边无内容，这种场景一般用于阻塞
 		fmt.Println("11")
 	}()
 	fmt.Println("22")
