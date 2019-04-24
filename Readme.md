@@ -1,3 +1,36 @@
+### 官方文档
+[标准库](http://docscn.studygolang.com/pkg/)
+[官网en](https://golang.org/)
+
+###### 官网的正确解读
+链接如右边: https://golang.google.cn/pkg/os/#Hostname
+
+```
+func Hostname
+	func Hostname() (name string, err error)
+		Hostname returns the host name reported by the kernel.
+```
+根据示例如下:
+```
+package main
+
+import (
+	"fmt"
+	"log"
+	"os"
+)
+
+func main() {
+	name, err := os.Hostname()       // Hostname函数返回一个字符串和error，所以要判断是否有error
+	// // fmt.Println(os.Hostname())
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println(name)
+}
+
+```
+
 
 #### golang入门文档如下:
 -----
@@ -6,6 +39,7 @@
 [go语言圣经](https://books.studygolang.com/gopl-zh/)
 
 [web框架推荐gin](https://gin-gonic.com/zh-cn/docs/)
+
 
 从php转过来的一定很喜欢gin
 -----
