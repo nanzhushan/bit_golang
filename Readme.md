@@ -21,8 +21,8 @@ import (
 )
 
 func main() {
-	name, err := os.Hostname()       // Hostname函数返回一个字符串和error，所以要判断是否有error
-	// // fmt.Println(os.Hostname())
+	name, err := os.Hostname()  // Hostname函数返回一个字符串和error，所以要判断是否有error
+	//fmt.Println(os.Hostname())
 	if err != nil {
 		log.Fatal(err)
 	}
