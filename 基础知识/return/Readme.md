@@ -21,8 +21,8 @@ func say(flag bool) {
 }
 
 func getStatus() (num int) {	
-	num = 100  #num 是在返回值中定义的变量
-	return     // 因为函数中已经定义了返回类型
+	num = 100  # num 是在返回值中定义的变量
+	return     /* 因为函数中已经定义了返回类型 */ 
 }
 
 func main() {
