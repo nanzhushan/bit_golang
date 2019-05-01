@@ -13,6 +13,6 @@ func main() {
 		log.Fatal(err)
 		return
 	}
-	str, _ := cfg.GetValue(goconfig.DEFAULT_SECTION, "city")
+	str, _ := cfg.GetValue(goconfig.DEFAULT_SECTION, "city")   // 取值
 	fmt.Println(str)
 }
