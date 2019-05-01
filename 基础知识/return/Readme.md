@@ -5,7 +5,7 @@ return用于在函数内部，退出函数执行过程,使用场景如下:
 通常有两种情况不需要指定返回值退出函数执行过程
 	- 第一是：函数没有返回值
 	- 第二是：函数返回值有变量名，不需要显示的指定返回值
-```
+```golang
 package main
 
 import (
@@ -20,9 +20,8 @@ func say(flag bool) {
 	fmt.Println("没有返回值")
 }
 
-func getStatus() (num int) {
-	// num是在返回值中定义的变量
-	num = 100
+func getStatus() (num int) {	
+	num = 100  // num是在返回值中定义的变量
 	return     // 因为函数中已经定义了返回类型
 }
 
@@ -50,7 +49,7 @@ import (
 
 // getMsg函数需要返回一个string类型值
 func getMsg() string {
-	return "hello"  // 当函数有返回值时,如果返回值没有定义变量,那么一定要使用return加上返回值退出函数
+	return "hello"  //当函数有返回值时,如果返回值没有定义变量,那么一定要使用return加上返回值退出函数
 }
 
 func main() {
