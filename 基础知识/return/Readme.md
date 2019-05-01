@@ -21,7 +21,7 @@ func say(flag bool) {
 }
 
 func getStatus() (num int) {	
-	num = 100  // num是在返回值中定义的变量
+	num = 100  // num have definie vars in retrun
 	return     // 因为函数中已经定义了返回类型
 }
 
