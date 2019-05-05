@@ -6,13 +6,13 @@
 ###### 官网的正确解读
 链接如右边: https://golang.google.cn/pkg/os/#Hostname
 
-```
+```go
 func Hostname
 	func Hostname() (name string, err error)
 		Hostname returns the host name reported by the kernel.
 ```
 根据示例如下:
-```
+```go
 package main
 
 import (
