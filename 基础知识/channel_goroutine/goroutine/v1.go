@@ -1,18 +1,10 @@
 package main
 
-import (
-	"fmt"
-	"time"
-)
-
-func Hello()  {
-	fmt.Print("hello...\n")
-}
+import "fmt"
 
 func main()  {
-	for i:=1;i<100;i++ {
-		go Hello()       // go 并发执行
+	go fmt.Println("1")  // 使用go关键字加一个函数就可以创建一个携程
+	fmt.Println("2")
 
-	}
-	time.Sleep(time.Duration(2)*time.Second)   // 休眠2秒
 }
+
