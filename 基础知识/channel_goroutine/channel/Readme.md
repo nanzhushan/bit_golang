@@ -26,10 +26,30 @@ funcmain() {
 	fmt.Println(<-ch)
 }
 ```
-解析: 在计算sum和的goroutine没有执行完，把值赋给 ch 通道之前
-fmt.Println(<-ch) 会一直等待,所以 main 主goroutine就不会终止,只有当计算和的goroutine完成后,
-并且发送到 ch 通道的操作准备好后,同时 <-ch 就会接收计算好的值,然后打印出来。
+解析: 只有当计算和的goroutine完成后,并且发送到 ch 通道的操作准备好后,同时 <-ch 就会接收计算好的值,然后打印出来。
 
+或者这样写：
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	ch := make(chan int) // 没有能力保存任何值
+	// go func() {
+	// 	ch <- 1
+	// }()
+	ch <- 1 // 不加go关键字就不是和print进行同一个时刻调度的
+	ch <- 2
+	// time.Sleep(time.Second * 1)
+	// msg := <-ch
+	fmt.Print(<-ch)
+
+}
+
+```
 
 #### 2)有缓冲通道
 ```go
