@@ -1,7 +1,7 @@
 ### 循环
 golang 只有一种循环结构--for循环. 它有五种方式:
 
-* 1）由init statement(初始语句)、condition statement(条件语句)和post statement(循环语句)组成
+* 1)**由init statement(初始语句)、condition statement(条件语句)和post statement(循环语句)组成**
 ```go
 package main
 
