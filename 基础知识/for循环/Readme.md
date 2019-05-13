@@ -58,14 +58,11 @@ func main() {
 		fmt.Printf("第%d位的字符是 %c \n", i, value)
 	}
 }
-
-
+```
 * 5）无限循环
 ```
 for {
     // statement
 }
-```
-
 
 ```
