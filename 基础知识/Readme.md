@@ -85,20 +85,21 @@ fmt.Println(*p) // 通过指针 p 读取 i
 这也就是通常所说的“间接引用”或“非直接引用”。
 ```
 ## 数组和slice
-	package main
-	import "fmt"
-	func main()  {
-		var a[2] string		// 像java一样要定义数组长度
-		a[0]="hello"
-		a[1]="dd"
-		fmt.Print(a)
+```go
+package main
+import "fmt"
+func main()  {
+	var a[2] string		// 像java一样要定义数组长度
+	a[0]="hello"
+	a[1]="dd"
+	fmt.Print(a)
 
-		// slice 是个有序的值,可以不定义长度.append 可以添加元素，类似py的list
-		p:=[]int{2,3,5,7}
-		fmt.Print(p)
-		fmt.Print(len(p))
-	}
-	
+	// slice 是个有序的值,可以不定义长度.append 可以添加元素，类似py的list
+	p:=[]int{2,3,5,7}
+	fmt.Print(p)
+	fmt.Print(len(p))
+}
+```	
 定义数组的三种方式
 ```go
 func main()  {
