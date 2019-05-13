@@ -46,14 +46,7 @@ func main() {
 
 ```
 
-* 4）无限循环
-```
-for {
-    // statement
-}
-```
-
-* 5）用range关键字遍历集合
+* 4）用range关键字遍历集合
 ```go
 package main
 
@@ -65,5 +58,14 @@ func main() {
 		fmt.Printf("第%d位的字符是 %c \n", i, value)
 	}
 }
+
+
+* 5）无限循环
+```
+for {
+    // statement
+}
+```
+
 
 ```
