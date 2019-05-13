@@ -12,7 +12,7 @@ ch:=make(chan int,0)
 发送goroutine和接收gouroutine必须是同步的，同时准备后，如果没有同时准备好的话，先执行的操作就会阻塞等待，
 直到另一个相对应的操作准备好为止,这种无缓冲的通道我们也称之为 同步通道
 ```
-funcmain() {
+func main() {
 	ch := make(chan int)
 
 	go func() {
@@ -68,21 +68,24 @@ close(ch)
 
 #### 3) 管道
 ```
-funcmain() {
+package main
+
+import "fmt"
+
+func main() {
 	one := make(chan int)
 	two := make(chan int)
- 
-	go func() {
-		one<-100
+	go func() {         //必须加go关键字和其他协程同一个时刻调度
+		one <- 100 // 往one channel发送数据
 	}()
- 
+
 	go func() {
-		v:=<-one
-		two<-v
+		v := <-one // 从one channel接收数据
+		two <- v   // 从one接收到的数据发送到two 通道
 	}()
- 
-	fmt.Println(<-two)
+	fmt.Println(<-two) // 打印从two通道读取的数据
 }
+
 ```
 解析: 定义两个通道 one和two,然后按照顺序，先把100发送给通道 one,然后用另外一个goroutine从 one 接收值,
 再发送给通道 two,最终在主goroutine里等着接收打印 two 通道里的值,这就类似于一个管道的操作
@@ -94,3 +97,11 @@ funcmain() {
 var send chan<- int //只能发送
 var receive <-chan int //只能接收
 ```
+单向通道应用于函数或者方法的参数比较多,例如:
+```go
+func counter(out chan<- int) {
+
+}
+```
+只能进行发送操作,防止误操作,使用了接收操作,如果使用了接收操作,在编译的时候就会报错的
+
