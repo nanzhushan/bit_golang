@@ -21,7 +21,7 @@ env GOOS=linux GOARCH=386 go build main.go
 
 ## 变量
 
-```
+```go
 var aa int32 = 10   // 第一种方式定义
 var aa = "hello"   // 第二种方式定义，根据值自定判断类型
 fmt.Print("type:",reflect.TypeOf(aa))   // 判断类型, java 中是instanceof
@@ -53,7 +53,7 @@ print(team[0])
 ```
 ### 结构体
 定义结构体 ，数据类型可以不同，但是数组必须数据类型相同
-```
+```go
 type aa struct {
 	x int
 	y int
@@ -100,7 +100,7 @@ fmt.Println(*p) // 通过指针 p 读取 i
 	}
 	
 定义数组的三种方式
-```
+```go
 func main()  {
 	// 定义有序数组
 	var aa = [2]string{"fdaf","fdaf"}   // 数组初始化,定义好长度
@@ -137,7 +137,7 @@ func main() {
 ```
 ## 函数
 1) 传参(如果定义了返回类型需要使用return，如果没有定义返回类型就不需要)
-```
+```go
 func main()  {
 	Greting("uu","77")
 }
@@ -185,7 +185,7 @@ func lai()  {
 }
 ```
 ## 计算时间
-```
+```go
 func main()  {
 	start := time.Now()
 	time.Sleep(3 * time.Second)   // sleep  3秒
@@ -197,7 +197,7 @@ func main()  {
 ```
 
 ## 转换成json
-```
+```go
 package main
 
 import (
@@ -230,7 +230,7 @@ func main()  {
 }
 ```
 map 转json
-```
+```go
 package main
 import (
 	"encoding/json"
@@ -253,7 +253,7 @@ func main()  {
 }
 ```
 ## 异常处理
-```
+```go
 b,err := json.Marshal(s)
 if err != nil{              // 类似java和py中的try...expect..., 其中 defer关键字就是异常处理中的finally
 	print("fail",err)
