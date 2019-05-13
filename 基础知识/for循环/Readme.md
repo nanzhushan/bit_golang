@@ -15,7 +15,7 @@ func main() {
 }
 ```
 
-* 2)由condition statement和post statement组成
+* 2)**由condition statement和post statement组成**
 ```go
 package main
 
@@ -30,7 +30,7 @@ func main() {
 }
 ```
 
-* 3)由condition statement组成
+* 3)**由condition statement组成**
 ```go
 package main
 
@@ -46,7 +46,7 @@ func main() {
 
 ```
 
-* 4）用range关键字遍历集合
+* 4)**用range关键字遍历集合**
 ```go
 package main
 
@@ -59,7 +59,7 @@ func main() {
 	}
 }
 ```
-* 5）无限循环
+* 5)**无限循环**
 ```
 for {
     // statement
