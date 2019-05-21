@@ -45,7 +45,7 @@ func main() {
 从php转过来的一定很喜欢gin
 -----
 
-##对比java/python/php  确实go还有有一些不足的地方
+###对比java/python/php  确实go还有有一些不足的地方
 * 导入自定义的要放到gopath目录
 * .....
 
