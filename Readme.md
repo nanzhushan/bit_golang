@@ -1,7 +1,7 @@
 ### 官方文档
 [标准库](http://docscn.studygolang.com/pkg/)
 
-[官网en](https://golang.org/)
+[官网EN](https://golang.org/)
 
 ###### 官网的正确解读
 链接如右边: https://golang.google.cn/pkg/os/#Hostname
@@ -53,7 +53,7 @@ func main() {
 * 高并发处理，类似于c,支持协程，为并发而生
 * 高性能的http服务器
 * 代码加密
-* 变异速度快
+* 编译速度快
 * 执行速度直逼c和c++,稍微超过java
 
 ### py为什么有全局锁
