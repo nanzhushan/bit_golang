@@ -53,11 +53,24 @@ print(team[0])
 ```
 ### 结构体
 定义结构体 ，数据类型可以不同，但是数组必须数据类型相同
+
+* 如果结构体名称以大写字母开头,则它是其他包可以访问的导出类型(Exported Type)
+* 同样，如果结构体里的字段首字母大写，它也能被其他包访问到。
 ```go
 type aa struct {
 	x int
 	y int
 }
+
+
+type Cli struct {  // 首字母大写表示是public全局的
+	Ip string   
+	username string
+	password string
+	Port int   // 首字母大写表示是public全局的
+	client *ssh.Client  // ssh客户端
+}
+
 
 func main()  {
 	v := aa{1,4}
