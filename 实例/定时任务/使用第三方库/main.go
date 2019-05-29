@@ -13,7 +13,7 @@ func text() { // define task
 
 func main() {
 	var c = cron.New()                // 里面有定义channel
-	c.AddFunc("*/5 * * * *", func() { // 没隔5s
+	c.AddFunc("*/5 * * * *", func() { // 每隔5s
 		text() // exec task
 	})
 	c.Start()
