@@ -16,25 +16,31 @@ env GOOS=linux GOARCH=386 go build main.go
 * 函数外定义的变量称为全局变量
 * 函数定义中的变量称为形式参数
 
-1)`:=` 结构替代var进行变量赋值不能使用在函数外。 
-
-
 ## 变量
 
 ```go
-var aa int32 = 10   // 第一种方式定义
-var aa = "hello"   // 第二种方式定义，根据值自定判断类型
+var aa string = "aaa"   // full statement(全声明变量)
+var aa = "hello"   // 自动推导型变量a
+
+
 fmt.Print("type:",reflect.TypeOf(aa))   // 判断类型, java 中是instanceof
 
-var aa int32 = 10
-_=aa                    // 定义变量而不使用，需要定义 空标识符
-
-name:="haha"  // 第三种方式，这种智能在函数体内使用，不能定义为全局变量
 
 var (                   // 多变量定义
     name1 type1
     name2 type2
 )
+```
+
+短声明变量
+```go
+var a string  //不能在函数体外赋值
+a = "hello"
+
+等价于
+
+a := "hello"   // 短声明变量必须在函数体内赋值
+
 ```
 
 ## 常量
