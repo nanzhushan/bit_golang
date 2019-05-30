@@ -14,7 +14,6 @@ env GOOS=linux GOARCH=386 go build main.go
 * Go语言最少有个 main() 函数
 * 函数内定义的变量称为局部变量
 * 函数外定义的变量称为全局变量
-* 函数定义中的变量称为形式参数
 
 ## 变量
 
